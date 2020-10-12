@@ -1,45 +1,52 @@
 @import "./colors.scss";
 @import "./fonts.scss";
 @import "bootstrap/dist/css/bootstrap.css";
+
 h1 {
 	font-size: 36px;
 	line-height: 24px;
 	color: $black;
 	font-weight: 700;
-	font-family: "Quicksand";
+	font-family: Quicksand;
 }
 h2 {
 	font-size: 32px;
 	line-height: 36px;
 	color: $black;
 	font-weight: 500;
-	font-family: "Quicksand";
+	font-family: Quicksand;
 }
 h3 {
 	font-size: 18px;
 	line-height: 27px;
 	color: $black;
 	font-weight: 500;
-	font-family: "Quicksand";
+	font-family: Quicksand;
 }
 h4 {
 	font-size: 18px;
 	line-height: 28px;
 	color: $black;
 	font-weight: 500;
-	font-family: "Quicksand";
+	font-family: Quicksand;
 }
 p {
 	font-size: 16px;
 	line-height: 27px;
 	color: $grey;
 	font-weight: 400;
-	font-family: "Quicksand";
+	font-family: Quicksand;
 }
 span {
 	font-size: 16px;
 	line-height: 27px;
-	// font-weight: 700;
-	font-family: "Quicksand-Bold";
-	text-align: center;
+	// font-weight: 500;
+	font-family: Quicksand-Bold, sans-serif;
+	// text-align: center;
+}
+a {
+	// font-size: 16px;
+	line-height: 27px;
+	font-weight: 500;
+	font-family: Quicksand, sans-serif;
 }

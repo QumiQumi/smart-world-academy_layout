@@ -1,9 +1,44 @@
+@import "../../styles/colors.scss";
+
 .main-navbar {
-	padding-right: 100px;
 	&__logo {
+		background-color: $blue;
+		color: white;
+		border-radius: 0 0 22px 22px;
+		width: 179px;
+		min-width: 179px;
+		height: 100px;
+		font-size: 36px;
+		line-height: 24px;
+		color: $white-text;
+		margin-left: 140px;
+		margin-top: 0;
+
+		font-family: Quicksand-Bold, sans-serif;
 	}
 	&__nav {
+		margin-right: 50px;
+		a {
+			// display: inline-block;
+			padding: 1.2rem;
+		}
+		li {
+			&:last-child a {
+				padding-right: 0;
+			}
+		}
 	}
 	&__signup-btn {
+		margin-right: 145px;
 	}
+	// &::after {
+	// 	position: absolute;
+	// 	// content: url("../../assets/images/header-bg.svg");
+	// 	top: -100px;
+	// 	z-index: -1;
+	// 	// width: 1945px;
+	// 	// height: 1114px;
+	// 	filter: drop-shadow(0 0 42.5px rgba(127, 127, 127, 0.41));
+	// 	// background-color: $blue;
+	// }
 }

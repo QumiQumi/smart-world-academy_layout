@@ -1,0 +1,23 @@
+.wrapper {
+	background-color: aquamarine;
+	padding: 0;
+	margin: 0 auto;
+}
+@media (max-width: 1120px) {
+	.wrapper {
+		a {
+			font-size: 80%;
+		}
+	}
+}
+@media (max-width: 1920px) {
+	.wrapper {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1921px) {
+	.wrapper {
+		width: 1920px;
+	}
+}

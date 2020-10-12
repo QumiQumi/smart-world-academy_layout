@@ -1,20 +1,20 @@
 include ../button/button.pug
 
-.main-navbar.d-flex.justify-content-between
-	.main-navbar__logo
+.main-navbar.d-flex.align-items-center
+	.main-navbar__logo.d-flex.align-items-center.justify-content-center.mr-auto
 		|AppSon
 
 	.main-navbar__nav.d-flex
 
-		ul.nav.justify-content-end
+		ul.nav.justify-content-between.align-items-center
 			li.nav-item
-				a.nav-link.active(href="#Home") Home
+				a.nav-link.active(href="#HOME") HOME
 			li.nav-item
-				a.nav-link.disabled(href="#Home") Home
+				a.nav-link.disabled(href="#FEATURES") FEATURES
 			li.nav-item
-				a.nav-link.disabled(href="#Home") Home
+				a.nav-link.disabled(href="#PRICING") PRICING
+			li.nav-item
+				a.nav-link.disabled(href="#PAGES") PAGES
 
-		.main-navbar__signup-btn
-			+button("SIGN UP", "button_color_dark-blue")
-		//mixin button
-		//todo: mixin button
+	.main-navbar__signup-btn
+		+button("SIGN UP", "button_color_dark-blue")
