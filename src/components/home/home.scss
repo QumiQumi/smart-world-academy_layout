@@ -1,0 +1,16 @@
+.home {
+	margin-top: 7em;
+	h1 {
+		text-align: center;
+	}
+	p {
+		max-width: 615px;
+		text-align: center;
+		margin-top: 1.5em;
+		margin-bottom: 2em;
+	}
+	&__buttons {
+		width: 360px;
+		// margin-top: 0.5em;
+	}
+}
