@@ -1,8 +1,10 @@
+include ../button/button.pug
+
 .main-navbar.d-flex.justify-content-between
-	.main-navbar-logo
+	.main-navbar__logo
 		|AppSon
 
-	.main-navbar-nav
+	.main-navbar__nav.d-flex
 
 		ul.nav.justify-content-end
 			li.nav-item
@@ -12,6 +14,7 @@
 			li.nav-item
 				a.nav-link.disabled(href="#Home") Home
 
-		.main-navbar-signup-btn
+		.main-navbar__signup-btn
+			+button("SIGN UP", "button_color_dark-blue")
 		//mixin button
 		//todo: mixin button

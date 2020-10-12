@@ -1,0 +1,17 @@
+@import "../../styles/colors.scss";
+
+.button {
+	width: 165px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: $blue;
+	color: white;
+	&_color_dark-blue {
+		background-color: $dark-blue;
+	}
+	&_color_outline {
+		background-color: transparent;
+		border: 2px solid $blue;
+		color: $blue;
+	}
+}

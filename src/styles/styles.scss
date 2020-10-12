@@ -25,7 +25,7 @@ h3 {
 h4 {
 	font-size: 18px;
 	line-height: 28px;
-	color: #333333;
+	color: $black;
 	font-weight: 500;
 	font-family: "Quicksand";
 }
@@ -35,4 +35,11 @@ p {
 	color: $grey;
 	font-weight: 400;
 	font-family: "Quicksand";
+}
+span {
+	font-size: 16px;
+	line-height: 27px;
+	// font-weight: 700;
+	font-family: "Quicksand-Bold";
+	text-align: center;
 }
