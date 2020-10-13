@@ -13,4 +13,17 @@
 		width: 360px;
 		// margin-top: 0.5em;
 	}
+	&__image {
+		margin-top: 1em;
+		overflow: hidden;
+		// background: url(/src/assets/images/Phones.svg) no-repeat top center;
+		// background-size: auto;
+		// width: 861px;
+		// height: 534px;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+			margin-bottom: -460px;
+		}
+	}
 }

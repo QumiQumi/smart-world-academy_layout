@@ -1,6 +1,19 @@
 @import "../../styles/colors.scss";
 
 .main-navbar {
+	// position: relative;
+	// &::after {
+	// 	position: absolute;
+	// 	content: "";
+	// 	margin: 0 auto;
+	// 	bottom: -1043px;
+	// 	z-index: -1;
+	// 	top: 0;
+	// 	left: 0;
+	// 	right: 0;
+	// 	background-size: 100% 9px;
+	// 	background: url("/src/assets/images/header-bg.svg") no-repeat bottom center;
+	// }
 	&__logo {
 		background-color: $blue;
 		color: white;

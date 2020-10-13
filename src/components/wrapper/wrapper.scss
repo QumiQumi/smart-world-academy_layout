@@ -1,6 +1,7 @@
 .wrapper {
 	background-color: aquamarine;
 	padding: 0;
+	z-index: 1;
 	&__content {
 		width: 1170px;
 	}
