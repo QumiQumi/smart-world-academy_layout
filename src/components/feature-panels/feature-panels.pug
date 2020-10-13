@@ -1,0 +1,11 @@
+include ../panel/panel.pug
+.feature-panels.d-flex
+	//- .feature-panels__container
+	-	var text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore"
+	ul.d-flex.justify-content-between.flex-wrap.m-auto
+		li
+			+panel(text, "Analysis", "icon-chart")
+		li
+			+panel(text, "Clean Design", "icon-diamond")
+		li
+			+panel(text, "Messaging", "icon-mail")

@@ -1,0 +1,8 @@
+mixin panel(text, title, icon)
+	- path="/src/assets/images/"+icon+".svg"
+
+	.panel.d-flex.flex-column.align-items-center&attributes(attributes)
+		.panel__icon
+			img(src=path, alt="")
+		h3= title
+		p= text

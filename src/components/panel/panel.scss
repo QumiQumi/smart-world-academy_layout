@@ -1,0 +1,17 @@
+.panel {
+	width: 360px;
+	height: 290px;
+	border-radius: 5px;
+	filter: drop-shadow(0 0 12.5px #f0f0f0);
+	background-color: #ffffff;
+	&__icon {
+		margin-top: 2.5em;
+	}
+	h3 {
+		margin-top: 1.5em;
+	}
+	p {
+		margin-top: 0.5em;
+		text-align: center;
+	}
+}

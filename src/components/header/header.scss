@@ -1,5 +1,9 @@
+@import "../../styles/colors.scss";
+
 header {
 	background: url("/src/assets/images/header-bg-cut.svg") no-repeat top;
 	background-size: auto auto;
 	background-clip: padding-box;
+	background-color: $white-bg;
+	filter: drop-shadow(0 0 42.5px rgba(127, 127, 127, 0.41));
 }
