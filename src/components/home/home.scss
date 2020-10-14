@@ -1,29 +1,32 @@
 .home {
 	margin-top: 7em;
+	// position: relative;
+	// z-index: 10;
+
 	h1 {
 		text-align: center;
+		z-index: 10;
 	}
 	p {
 		max-width: 615px;
 		text-align: center;
 		margin-top: 2em;
 		margin-bottom: 2em;
+		z-index: 10;
 	}
 	&__buttons {
 		width: 360px;
-		// margin-top: 0.5em;
+		z-index: 10;
 	}
 	&__image {
 		margin-top: 1em;
 		overflow: hidden;
-		// background: url(/src/assets/images/Phones.svg) no-repeat top center;
-		// background-size: auto;
-		// width: 861px;
-		// height: 534px;
+		z-index: 10;
+
 		img {
 			max-width: 100%;
 			max-height: 100%;
-			margin-bottom: -460px;
+			margin-bottom: -458px;
 		}
 	}
 }

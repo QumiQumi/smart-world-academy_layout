@@ -1,0 +1,15 @@
+include ./topic/topic.pug
+
+.feature-topics
+	-	var text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+	ul.d-flex.flex-column.align-items-center.m-auto.flex-nowrap
+		li
+			.feature-topics__images.mr-auto
+				img(src="/src/assets/images/easy-messaging-2.png", alt="")
+			+topic(text, "Easy Messaging")
+		li
+			.feature-topics__images
+				img(src="/src/assets/images/keep-in-touch-1.png", alt="")
+			+topic(text, "Keep In Touch")(class="mr-auto")
+

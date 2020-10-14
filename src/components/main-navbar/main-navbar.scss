@@ -1,19 +1,6 @@
 @import "../../styles/colors.scss";
 
 .main-navbar {
-	// position: relative;
-	// &::after {
-	// 	position: absolute;
-	// 	content: "";
-	// 	margin: 0 auto;
-	// 	bottom: -1043px;
-	// 	z-index: -1;
-	// 	top: 0;
-	// 	left: 0;
-	// 	right: 0;
-	// 	background-size: 100% 9px;
-	// 	background: url("/src/assets/images/header-bg.svg") no-repeat bottom center;
-	// }
 	&__logo {
 		background-color: $blue;
 		color: white;
@@ -24,15 +11,17 @@
 		font-size: 36px;
 		line-height: 24px;
 		color: $white-text;
-		margin-left: 140px;
+		margin-left: 4em;
 		margin-top: 0;
 
 		font-family: Quicksand-Bold, sans-serif;
+		z-index: 10;
 	}
 	&__nav {
+		z-index: 10;
+
 		margin-right: 50px;
 		a {
-			// display: inline-block;
 			padding: 1.2rem;
 		}
 		li {
@@ -43,15 +32,6 @@
 	}
 	&__signup-btn {
 		margin-right: 145px;
+		z-index: 10;
 	}
-	// &::after {
-	// 	position: absolute;
-	// 	// content: url("../../assets/images/header-bg.svg");
-	// 	top: -100px;
-	// 	z-index: -1;
-	// 	// width: 1945px;
-	// 	// height: 1114px;
-	// 	filter: drop-shadow(0 0 42.5px rgba(127, 127, 127, 0.41));
-	// 	// background-color: $blue;
-	// }
 }
