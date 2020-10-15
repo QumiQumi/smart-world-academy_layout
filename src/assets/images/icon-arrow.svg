@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 11" width="15" height="11">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #0f7bff } 
+	</style>
+	<g id="About">
+		<g id="Keep In touch">
+			<g id="Text">
+				<g id="Read More">
+					<path id="icon" class="shp0" d="M10.1 0.15C9.9 -0.07 9.56 -0.07 9.34 0.15C9.14 0.36 9.14 0.72 9.34 0.93L13.18 4.93L0.53 4.93C0.23 4.93 0 5.18 0 5.49C0 5.79 0.23 6.05 0.53 6.05L13.18 6.05L9.34 10.04C9.14 10.26 9.14 10.62 9.34 10.83C9.56 11.05 9.9 11.05 10.1 10.83L14.84 5.88C15.05 5.67 15.05 5.31 14.84 5.1L10.1 0.15Z" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
