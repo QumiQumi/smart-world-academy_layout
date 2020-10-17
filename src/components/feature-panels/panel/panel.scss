@@ -5,17 +5,18 @@
 	filter: drop-shadow(0 0 12.5px #f0f0f0);
 	background-color: #ffffff;
 	transition: 0.2s;
+
 	&__icon {
 		margin-top: 2.5em;
 	}
+
 	h3 {
 		margin-top: 1.5em;
 	}
+
 	p {
 		margin-top: 1em;
 		text-align: center;
 	}
-	&:hover {
-		transform: scale(1.1);
-	}
+
 }

@@ -6,9 +6,11 @@
 	border-radius: 25px;
 	background-color: $blue;
 	color: white;
+
 	&_color_dark-blue {
 		background-color: $dark-blue;
 	}
+
 	&_color_outline {
 		background-color: $white-bg;
 		border: 2px solid $blue;

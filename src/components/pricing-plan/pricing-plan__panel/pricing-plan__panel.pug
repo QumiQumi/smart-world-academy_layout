@@ -1,0 +1,17 @@
+include ../../button/button.pug
+mixin pricing-plan__panel(title, icon, price, buttonTheme)
+	.pricing-plan__panel.d-flex.flex-column.align-items-center&attributes(attributes)
+		- path="/src/assets/images/"+icon+".svg"
+		img(src=path, alt="")
+		h3= title
+		.pricing-plan__panel__text
+			p 2gb Hosting
+			p 10 Custom Domain
+			p SSD Hosting
+			p 50 gb Bandwith
+			p Free Support
+		.pricing-plan__panel__price
+			span $
+			=price
+
+		+button("Try Now", buttonTheme)

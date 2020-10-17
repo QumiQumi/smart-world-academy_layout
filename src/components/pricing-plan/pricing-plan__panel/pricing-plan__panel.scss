@@ -1,0 +1,49 @@
+.pricing-plan__panel {
+	background-color: white;
+	filter: drop-shadow(0 0 34px rgba(165, 165, 165, 0.25));
+	width: 360px;
+	height: 576px;
+
+	img {
+		margin-top: 40px;
+	}
+
+	h3 {
+		text-align: center;
+		margin-top: 25px;
+		position: relative;
+
+		&::after {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transform: translateX(-25%) translateY(20px);
+			content: "";
+			border-bottom: solid 1px #e0e0e0;
+			height: 0;
+			width: 165px;
+		}
+	}
+
+	&__text {
+		margin-top: 45px;
+
+		p {
+			text-align: center;
+			margin-bottom: 0.5em;
+		}
+	}
+
+	&__price {
+		margin-top: 3px;
+		margin-bottom: 28px;
+		font-size: 32px;
+		line-height: 36px;
+		color: #0f7bff;
+		font-weight: 500;
+
+		span {
+			font-size: 16px;
+		}
+	}
+}

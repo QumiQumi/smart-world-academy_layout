@@ -1,0 +1,10 @@
+include ./pricing-plan__panel/pricing-plan__panel.pug
+.pricing-plan.d-flex.justify-content-center
+	.pricing-plan__content.d-flex.flex-wrap.justify-content-between.align-items-center
+		.pricing-plan__topic
+			h2 Pricing Plan
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
+			include ./buttons/buttons.pug	
+		- var text="2gb Hosting<br>10 Custom Domain<br>SSD Hosting<br>50 gb Bandwith<br>Free Support"
+		+pricing-plan__panel("Standart", "icon-plane","19.00")
+		+pricing-plan__panel("Premium", "icon-rocket","49.00")

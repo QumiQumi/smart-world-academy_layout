@@ -1,0 +1,20 @@
+@import "../../../styles/colors.scss";
+
+.buttons {
+	&__button-primary {
+		width: 165px;
+		height: 50px;
+		border-radius: 25px 0 0 25px;
+		background-color: $blue;
+		color: white;
+	}
+
+	&__button-secondary {
+		width: 165px;
+		height: 50px;
+		background-color: white;
+		border-radius: 0 25px 25px 0;
+		color: $blue;
+		border: solid 1px $blue;
+	}
+}

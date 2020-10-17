@@ -1,31 +1,42 @@
 @import "../../styles/colors.scss";
 @import "./panel/panel.scss";
+
 .feature-panels {
 	background-color: $white-bg;
 	z-index: 10;
+
 	ul {
 		padding: 10.3em 0 8.5em;
 		width: 1140px;
+
 		li:nth-child(2) {
 			margin-top: 3em;
 		}
+
 		li {
 			list-style-type: none;
 		}
 	}
+
+	.panel:hover {
+		transform: scale(1.1);
+	}
 }
+
 @media (max-width: 1100px) {
 	.feature-panels {
 		ul {
 			padding: 3em 0 5em;
 			flex-direction: column;
 			align-items: center;
+
 			li {
 				margin-top: 2em;
 			}
 		}
 	}
 }
+
 // .margin {
 // 	margin-top: 3em;
 // }
