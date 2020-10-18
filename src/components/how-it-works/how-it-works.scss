@@ -8,6 +8,17 @@
 	h2 {
 		text-align: center;
 		width: 100%;
+		position: relative;
+		z-index: 1;
+
+		&::before {
+			top: -50%;
+			z-index: -1;
+			left: 0;
+			right: 0;
+			position: absolute;
+			content: url(/src/assets/images/icon-for-title.svg);
+		}
 	}
 
 	p {

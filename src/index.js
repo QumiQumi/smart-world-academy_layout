@@ -7,6 +7,8 @@ import "./components/feature-panels/feature-panels.scss";
 import "./components/feature-topics/feature-topics.scss";
 import "./components/how-it-works/how-it-works.scss";
 import "./components/pricing-plan/pricing-plan.scss";
+import "./components/trusted-by/trusted-by.scss";
+import "./components/news/news.scss";
 
 // import "./components/panel/panel.scss";
 import "./components/button/button";
