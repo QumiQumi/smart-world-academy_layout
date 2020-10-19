@@ -11,25 +11,30 @@
 		font-size: 36px;
 		line-height: 24px;
 		color: $white-text;
+
 		margin-left: 4em;
 		margin-top: 0;
 
 		font-family: Quicksand-Bold, sans-serif;
 		z-index: 10;
 	}
+
 	&__nav {
 		z-index: 10;
 
 		margin-right: 50px;
+
 		a {
 			padding: 1.2rem;
 		}
+
 		li {
 			&:last-child a {
 				padding-right: 0;
 			}
 		}
 	}
+
 	&__signup-btn {
 		margin-right: 145px;
 		z-index: 10;

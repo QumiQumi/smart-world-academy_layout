@@ -1,6 +1,16 @@
 @import "../../styles/colors.scss";
 
 .trusted-by {
-	height: 608px;
+	min-height: 608px;
 	background-color: $white-bg;
+	display: grid;
+	grid-template-columns: auto 1fr;
+
+	&__image {
+		background-color: yellow;
+	}
+
+	&__content {
+		background-color: yellowgreen;
+	}
 }
