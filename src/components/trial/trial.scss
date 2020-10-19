@@ -1,0 +1,43 @@
+.trial {
+	min-height: 336px;
+	background-color: #f5fcfd;
+
+	&__content {
+		width: 750px;
+
+	}
+
+	&__text {
+		p {
+			margin-top: 1em;
+		}
+	}
+
+	&__button {
+		width: 263px;
+		height: 76px;
+		border-radius: 5px;
+		background-color: #0f7bff;
+
+		div {
+			font-size: 16px;
+			line-height: 27px;
+			color: #ffffff;
+			font-weight: 700;
+			margin-right: 10px;
+
+		}
+
+		img {
+			display: inline-block;
+		}
+	}
+}
+
+@media(max-width:840px) {
+
+	.trial__text,
+	.trial__button {
+		margin: 20px auto;
+	}
+}
