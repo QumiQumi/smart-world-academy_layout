@@ -5,17 +5,22 @@ include ../button/button.pug
 	.main-navbar__logo.d-flex.align-items-center.justify-content-center.mr-auto
 		|AppSon
 
-	.main-navbar__nav.d-flex.align-items-center
 
-		ul.nav.justify-content-between.align-items-center
-			li.nav-item
-				a.nav-link.active(href="#HOME") HOME
-			li.nav-item
-				a.nav-link.disabled(href="#FEATURES") FEATURES
-			li.nav-item
-				a.nav-link.disabled(href="#PRICING") PRICING
-			li.nav-item
-				a.nav-link.disabled(href="#PAGES") PAGES
-
-	.main-navbar__signup-btn
+	.main-navbar__nav-primary.justify-content-between.align-items-center.flex-nowrap
+		a(href="#HOME") HOME
+		a(href="#FEATURES") FEATURES
+		a(href="#PRICING") PRICING
+		a(href="#PAGES") PAGES
+		//- .main-navbar__signup-btn
 		+button("SIGN UP", "button_color_dark-blue")
+	.main-navbar__nav-burger
+		input(type="checkbox" id="menu__toggle")
+		label(for="menu__toggle"): span 
+		ul.main-navbar__nav-burger__menu
+			li: a(href="#HOME") HOME
+			li: a(href="#FEATURES") FEATURES
+			li: a(href="#PRICING") PRICING
+			li: a(href="#PAGES") PAGES
+			li
+			li: a(href="#PAGES") SIGN UP
+		

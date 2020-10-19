@@ -17,26 +17,146 @@
 
 		font-family: Quicksand-Bold, sans-serif;
 		z-index: 10;
+
 	}
 
-	&__nav {
+	&__nav-primary {
 		z-index: 10;
-
-		margin-right: 50px;
+		margin-right: 9em;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
 
 		a {
 			padding: 1.2rem;
+			color: $grey;
 		}
 
-		li {
-			&:last-child a {
-				padding-right: 0;
+		a:nth-child(1) {
+			color: $blue;
+		}
+
+		a:nth-child(4) {
+			padding-right: 3em;
+		}
+
+		// display: none;
+
+	}
+
+	&__nav-burger {
+
+		display: none;
+
+		&__menu {
+			visibility: hidden;
+			font-size: 26px;
+
+			z-index: 11;
+			background-color: $white-bg;
+			position: fixed;
+			top: 0;
+			right: -100%;
+			height: 100%;
+			width: 10em;
+			box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+			padding: 2em 4em 0 2em;
+			transition: 0.5s;
+
+			a {
+				color: $grey;
+			}
+
+			li:nth-child(1) a {
+				color: $blue;
+			}
+
+			li:nth-child(5) {
+				border-top: solid 1px lightgrey;
+			}
+
+			li {
+				list-style-type: none;
+			}
+		}
+
+		input {
+			opacity: 0;
+
+		}
+
+		label,
+		input {
+			z-index: 12;
+			position: fixed;
+			top: 2em;
+			right: 3em;
+		}
+
+		label {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			width: 30px;
+			height: 30px;
+
+			>span,
+			>span::before,
+			>span::after {
+				z-index: 12;
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				background-color: #616161;
+			}
+
+			>span::before {
+				content: "";
+				top: -8px;
+			}
+
+			>span::after {
+				content: "";
+				top: 8px;
+			}
+		}
+
+
+		#menu__toggle {
+
+			//работа меню 
+			&:checked~label span {
+				transform: rotate(45deg);
+			}
+
+			&:checked~label span::before {
+				top: 0;
+				transform: rotate(0);
+			}
+
+			&:checked~label span::after {
+				top: 0;
+				transform: rotate(90deg);
+			}
+
+			&:checked~.main-navbar__nav-burger__menu {
+				visibility: visible;
+				right: 0;
 			}
 		}
 	}
 
-	&__signup-btn {
-		margin-right: 145px;
-		z-index: 10;
+}
+
+@media(max-width:1000px) {
+	.main-navbar__nav-primary {
+		display: none;
+	}
+
+	.main-navbar__nav-burger {
+		display: block;
 	}
 }
