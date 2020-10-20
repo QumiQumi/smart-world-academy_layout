@@ -3,6 +3,7 @@
 header {
 	background-color: $white-bg;
 	position: relative;
+
 	&::after {
 		position: absolute;
 		content: url("/src/assets/images/header-bg-cut.svg");
@@ -13,5 +14,13 @@ header {
 		right: 0;
 		left: 0;
 		z-index: 0;
+	}
+
+	>a {
+		z-index: 15;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%) translateY(50%);
 	}
 }
