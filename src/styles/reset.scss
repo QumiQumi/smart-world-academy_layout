@@ -6,10 +6,10 @@
 }
 
 /* Убираем внутренние отступы */
-// ul[class],
-// ol[class] {
-// 	padding: 0;
-// }
+ul,
+ol {
+	padding: 0;
+}
 
 /* Убираем внешние отступы */
 body,
@@ -18,8 +18,8 @@ h2,
 h3,
 h4,
 p,
-// ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -38,15 +38,11 @@ body {
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
+ul,
+ol {
 	list-style: none;
 }
 
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
-	text-decoration-skip-ink: auto;
-}
 
 /* Упрощаем работу с изображениями */
 img {

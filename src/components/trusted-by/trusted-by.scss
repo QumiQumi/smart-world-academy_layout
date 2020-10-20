@@ -13,49 +13,51 @@
 	&__content {
 		background-color: yellowgreen;
 		width: 100%;
+		margin: 115px 0 0 125px;
+		// position: relative;
 	}
+
 
 	&__carusel {
-		// transition: 0.5s;
-
-		ul {
-			li {
-				list-style-type: none;
-			}
-
-
-		}
-	}
-
-	&__cardholders {
 		position: relative;
-		height: 15em;
+		// top: 0;
+		// left: 0;
+		height: 215px;
+		width: 100%;
+		margin-top: 30px;
 
+		// width: 1110px;
+		input {
+			visibility: hidden;
+		}
 
 		#cardholder-1 {
 			display: flex;
+			// display: inline-block;
 			position: absolute;
 			background-color: blanchedalmond;
 			left: 0;
 			transition: 1s;
-
+			width: 100%;
+			height: 100%;
 			// top: 0;
 		}
 
 		#cardholder-2 {
+			// display: inline-block;
 			display: flex;
-			// visibility: hidden;
 			position: absolute;
 			width: 0;
 			height: 0;
 			left: 100%;
 			transition: 1s;
-
+			// margin-right: ;
 		}
 
 		#cardholder-3 {
 			display: flex;
-			// visibility: hidden;
+
+			// display: inline-block;
 			background-color: blue;
 			width: 0;
 			height: 0;
@@ -68,26 +70,28 @@
 		#switch-1,
 		#label-switch-1 {
 			position: absolute;
-			bottom: -2em;
-			left: 3em;
+			bottom: -5em;
+			left: 0;
 		}
 
 		#switch-2,
 		#label-switch-2 {
 			position: absolute;
-			bottom: -2em;
-			left: 6em;
+			bottom: -5em;
+			left: 50px;
 		}
 
 		#switch-3,
 		#label-switch-3 {
 			position: absolute;
-			bottom: -2em;
-			left: 9em;
+			bottom: -5em;
+			left: 80px;
 		}
 	}
 
 	&__cardholder {}
+
+
 
 	&__card {
 		width: 360px;
@@ -95,7 +99,11 @@
 		border-radius: 5px;
 		filter: drop-shadow(0 0 12.5px rgba(165, 165, 165, 0.1));
 		background-color: #dddddd;
-		margin-left: 1em;
+		margin-right: 30px;
+	}
+
+	&__card:nth-child(3) {
+		margin-right: -100px;
 	}
 }
 
