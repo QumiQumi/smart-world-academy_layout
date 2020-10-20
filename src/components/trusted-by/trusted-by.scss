@@ -17,8 +17,6 @@
 
 	&__carusel {
 		position: relative;
-		// top: 0;
-		// left: 0;
 		height: 215px;
 		width: 100%;
 		margin-top: 40px;
@@ -29,37 +27,24 @@
 		}
 
 		#cardholder-1 {
-			display: flex;
-			// display: inline-block;
-			position: absolute;
 			left: 0;
-			transition: 1s;
 			width: 100%;
-			height: 100%;
-			// top: 0;
+			// height: 100%;
 		}
 
 		#cardholder-2 {
-			// display: inline-block;
 			visibility: hidden;
-			display: flex;
-			position: absolute;
 			width: 0;
-			height: 0;
+			// height: 0;
 			left: 100%;
-			transition: 1s;
-			// margin-right: ;
 		}
 
 		#cardholder-3 {
-			display: flex;
 			visibility: hidden;
-			// display: inline-block;
 			width: 0;
-			height: 0;
-			position: absolute;
+			// height: 0;
+
 			left: 100%;
-			transition: 1s;
 
 		}
 
@@ -85,7 +70,14 @@
 		}
 	}
 
-	&__cardholder {}
+	&__cardholder {
+		display: flex;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		transition: 1s;
+
+	}
 
 
 
@@ -114,37 +106,98 @@
 	}
 }
 
-//Переключатель 1
 #switch-1:checked~#cardholder-1,
 #switch-2:checked~#cardholder-2,
 #switch-3:checked~#cardholder-3 {
-
-
 	visibility: visible;
-	// display: flex;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	// height: 100%;
 }
 
 #switch-1:checked~#cardholder-2,
 #switch-1:checked~#cardholder-3,
 #switch-2:checked~#cardholder-3 {
 	visibility: hidden;
-	// display: none;
-	// display: flex;
 	left: 100%;
 	width: 0;
-	height: 0;
+	// height: 0;
 }
 
 #switch-2:checked~#cardholder-1,
 #switch-3:checked~#cardholder-1,
 #switch-3:checked~#cardholder-2 {
 	visibility: hidden;
-	// display: none;
-	// display: flex;
 	left: 0;
 	width: 0;
-	height: 0;
+	// height: 0;
+}
+
+@media(max-width:1919px) {
+	.trusted-by {
+		&__content {
+			margin-left: 1em;
+		}
+
+		img {
+			display: none;
+		}
+	}
+}
+
+@media(max-width:1160px) {
+	.trusted-by {
+		height: 1000px;
+
+		&__content {
+			h2 {
+				text-align: center;
+			}
+		}
+
+		&__cardholder {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__card {
+			margin-bottom: 1em;
+			margin-right: 0;
+
+			&:nth-child(3) {
+				margin-right: 0;
+			}
+		}
+
+		&__carusel {
+
+			#switch-1,
+			#label-switch-1 {
+				position: absolute;
+				bottom: -520px;
+				left: 50%;
+				transform: translateX(-400%);
+
+			}
+
+			#switch-2,
+			#label-switch-2 {
+				position: absolute;
+				bottom: -520px;
+
+				left: 50%;
+			}
+
+			#switch-3,
+			#label-switch-3 {
+				position: absolute;
+				bottom: -520px;
+
+				left: 50%;
+				transform: translateX(300%);
+
+			}
+		}
+	}
+
 }
