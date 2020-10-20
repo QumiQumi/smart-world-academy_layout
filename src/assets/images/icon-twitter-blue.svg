@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13" width="17" height="13">
+	<defs>
+		<image width="17" height="13" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAABqklEQVQ4T42QPWhTYRSGn/d+N9rcmEgpFOri7GI30daCi4K6CJU0FTsJbpJR3OriKI4WxD8oTYPRxclBUTBOgi4KLQ5CB3GqSW9CyL33SKJRuSaQAx98nHPe55zziqplce0pFoMdRoS/0Zgzz1sFZkENmT2JzK05LzrmSVvyNxoLJj2U2Uq0XKinOZnK3mwi3gCFVK0JbEnckKuG5zF7DrQMbibdzl0uTzUGAldpriFdHbak4DOiLJ42p11XH4CZXqOMbWSbJPYiwn1xzu5hnB16qdlyXMpXRC2c8SMrG5SBiVTzD2AfkB2+SXIyWiq8lV9tnTBLXgL+7zfK33S+HfvuCIvZr8JMbjN8hFgZV93vk+rxp2CBVSXqJx5bzu3fuwO6BATjwXQlXsrd7/P6glfmu+/hOlAcD8D7OJ+b55w6fyG9X6192MXJbczmgek/A/6n7nrGqW7pwMdB6dcmg3hgE34Q3jK4NsLkb5KVomL+9b8yZSqt47HstOAo2BxwaPhJ9ix2yXUuHtxO18X67qTLuDOYLvRABpOAAzpgO0J15NWiYvBulF8/Ac/BlK/IVAHCAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Testimonials">
+		<g id="Review">
+			<g id="01">
+				<g id="Name">
+					<use id="Twitter icon" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

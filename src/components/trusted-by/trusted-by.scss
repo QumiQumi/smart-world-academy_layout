@@ -6,14 +6,11 @@
 	// display: grid;
 	// grid-template-columns: auto 1fr;
 
-	&__image {
-		background-color: yellow;
-	}
+	&__image {}
 
 	&__content {
-		background-color: yellowgreen;
 		width: 100%;
-		margin: 115px 0 0 125px;
+		margin: 125px 0 0 125px;
 		// position: relative;
 	}
 
@@ -24,7 +21,7 @@
 		// left: 0;
 		height: 215px;
 		width: 100%;
-		margin-top: 30px;
+		margin-top: 40px;
 
 		// width: 1110px;
 		input {
@@ -35,7 +32,6 @@
 			display: flex;
 			// display: inline-block;
 			position: absolute;
-			background-color: blanchedalmond;
 			left: 0;
 			transition: 1s;
 			width: 100%;
@@ -45,6 +41,7 @@
 
 		#cardholder-2 {
 			// display: inline-block;
+			visibility: hidden;
 			display: flex;
 			position: absolute;
 			width: 0;
@@ -56,9 +53,8 @@
 
 		#cardholder-3 {
 			display: flex;
-
+			visibility: hidden;
 			// display: inline-block;
-			background-color: blue;
 			width: 0;
 			height: 0;
 			position: absolute;
@@ -98,8 +94,19 @@
 		height: 215px;
 		border-radius: 5px;
 		filter: drop-shadow(0 0 12.5px rgba(165, 165, 165, 0.1));
-		background-color: #dddddd;
+		background-color: #ffffff;
 		margin-right: 30px;
+		padding: 35px 30px;
+
+		p {
+			color: #929292;
+		}
+
+		>p {
+			padding-top: 5px;
+			padding-bottom: 10px;
+		}
+
 	}
 
 	&__card:nth-child(3) {
@@ -113,7 +120,7 @@
 #switch-3:checked~#cardholder-3 {
 
 
-	// visibility: visible;
+	visibility: visible;
 	// display: flex;
 	left: 0;
 	width: 100%;
@@ -123,7 +130,7 @@
 #switch-1:checked~#cardholder-2,
 #switch-1:checked~#cardholder-3,
 #switch-2:checked~#cardholder-3 {
-	// visibility: hidden;
+	visibility: hidden;
 	// display: none;
 	// display: flex;
 	left: 100%;
